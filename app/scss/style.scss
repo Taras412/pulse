@@ -37,7 +37,7 @@ header {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    color: #fff;
+    color: $text-color;
 }
 .header__phone {
     text-align: center;
@@ -47,7 +47,7 @@ header {
     font-weight: 700;
     font-size: 18px;
     line-height: 18px;
-    color: #fff;
+    color: $text-color;
     margin-bottom: 4px;
 }
 .header__tittle {
@@ -55,7 +55,7 @@ header {
     font-weight: 700;
     font-size: 42px;
     line-height: 42px;
-    color: #fff;
+    color: $text-color;
     text-transform: uppercase;
 }
 .header__subtittle {
@@ -63,7 +63,7 @@ header {
     font-weight: 500;
     font-size: 24px;
     line-height: 24px;
-    color: #fff;
+    color: $text-color;
     text-transform: uppercase;
 }
 .button {
@@ -73,9 +73,9 @@ header {
     line-height: 30px;
     text-transform: uppercase;
     width: 153px;
-    background-color: #c70101;
+    background-color: $button-color;
     border: none;
-    color: #fff;
+    color: $text-color;
     border-radius: 3px;
 }
 .header__wrapper-content {
@@ -110,7 +110,7 @@ header {
     font-weight: 500;
     font-size: 14px;
     line-height: 14px;
-    color: #fff;
+    color: $text-color;
 }
 .button--heder-content {
     width: 303px;
@@ -130,7 +130,7 @@ header {
     line-height: 25px;
 }
 .header__catalog a {
-    color: #fff;
+    color: $text-color;
 }
 .header__catalog a:hover {
     text-decoration:underline;
