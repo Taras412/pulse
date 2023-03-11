@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,400;0,700;1,400&display=swap');
 @import "reset.scss";
-
+@import "variables.scss";
 * {
     font-family: 'MuseoModerno', cursive;
 }
@@ -139,7 +139,7 @@ header {
 /* ADVANTEGE   ADVANTEGE   ADVANTEGE */
 
 .advantege {
-    padding: 76px 0 80px 0;
+    padding: 76px 10px 80px 10px;
 }
 .advantege h2 {
     text-align: center;
@@ -151,7 +151,7 @@ header {
 .advantege__icons-wrapper {
     display: flex;
     gap: 66px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .advantege__icon {
@@ -176,6 +176,50 @@ header {
     width: 270px;
     text-align: center;
     font-size: 16px;
+}
+
+
+
+.consultation {
+    padding: 100px 10px 108px 10px;
+    background: url('../images/consultation/consultation-bg.jpg') center (center/cover) no-repeat;
+}
+.consultation__wrapper {
+    width: 343px;
+    margin-top: 36px;
+}
+.consultation__form {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    input {
+        height: 54px;
+        padding: 0 10px;
+        border-radius: 3px;
+    }
+}
+.consultation__button {
+    width: 100%;
+    height: 54px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    text-transform: uppercase;
+
+}
+.consultation h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    color: $text-color;
+    text-transform: uppercase;
+}
+.consultation p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: $text-color;
 }
 
 

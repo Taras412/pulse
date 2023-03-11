@@ -3,6 +3,12 @@
     .advantege__icons-wrapper {
         flex-direction: column;
     }
+    .consultation h2 {
+        font-size: 30px;
+    }
+    .consultation p {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -14,7 +20,15 @@
         padding-right: 20px;
         padding-left: 20px;
     }
-}  
+    .consultation h2 {
+        font-size: 26px;
+    }
+    .consultation p {
+        font-size: 16px;
+    }
+}
+
+
 @media (max-width: 566px) {
     .advantege {
         padding: 10px 0 10px 0;
@@ -34,6 +48,27 @@
     }
     .advantege__icons-wrapper {
         gap: 10px;
+    }
+    .consultation__wrapper {
+        width: 280px;
+        margin-top: 36px;
+    }
+    .consultation__form {
+        gap: 10px;
+        input {
+            height: 46px;
+            padding: 0 10px;
+            border-radius: 3px;
+        }
+    }
+    .consultation h2 {
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .consultation p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 20px;
     }
 }
 
@@ -62,6 +97,9 @@
     }
     .advantege__icon-text {
         font-size: 13px;
+    }
+    .consultation h2 {
+        text-align: center;
     }
     
 }
