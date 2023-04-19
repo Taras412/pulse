@@ -19,6 +19,17 @@
         font-size: 14px;
         line-height: 18px;
     }
+    .footer__info {
+        width: 350px;
+        height: 200px;
+        padding: 25px 34px 30px 34px;
+    }
+    .footer__phone {
+        margin-bottom: 16px;
+    }
+    .footer__addr {
+        margin-bottom: 16px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -168,4 +179,16 @@
     .catalog-item {
         width: 280px;
     }
+    .footer__info {
+        height: 77px;
+        width: 280px;
+        padding: 10px 12px 10px 12px;
+    }
+    .footer__phone {
+        display: none;
+    }
+    .footer__addr {
+        display: none;
+    }
+
 }
