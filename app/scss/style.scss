@@ -446,7 +446,44 @@ header {
     
 }
 
+// REVIEW //
 
+.review {
+    &__wrapper {
+        padding: 0 20px;
+        margin-bottom: 60px;
+    }
+    h2 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__number-marafon {
+        margin-bottom: 10px;
+        color: #646464;
+        line-height: 22px;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: flex;
+    }
+    &__opinie-subheader {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+    }
+    &__opinie-text {
+        margin-left: 60px;
+        margin-right: 34px;
+    }
+    &__opinie-txt {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
 
 
 

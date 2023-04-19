@@ -15,6 +15,10 @@
     .catalog__content {
         justify-content: space-around;
     }
+    .review__opinie-txt {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -44,6 +48,18 @@
     .catalog__tab {
         width: 160px;
         font-size: 16px;
+    }
+    .review__wrapper {
+        display: block;
+    }
+    .review__opinie-text {
+        margin: 0px;
+    }
+    .review__opinie-txt {
+        line-height: 16px;
+    }
+    .review__opinie-subheader {
+        margin-top: 20px;
     }
 
 }
