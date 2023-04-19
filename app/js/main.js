@@ -21,15 +21,15 @@ $(document).ready(function(){
     $('.carousel__inner').slick({
         speed: 1200,
         adaptiveHeight: true,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         prevArrow: '<button type="button" class="slick-prev"><img src="../images/carousel/arrow-prev.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="../images/carousel/arrow-next.png"></button>',
         responsive: [
             {
-                breakpoint: 992,
+                breakpoint: 768,
                 settings: {
-                dots: true,
+                dots: false,
                 arrows: false
                 }
             }

@@ -226,6 +226,12 @@ header {
 .carousel {
     padding: 81px 0;
 }
+.carousel__item {
+    img {
+        width: 100%;
+    }
+}
+
 .carousel__inner {
     position: relative;
     width: 750px;
