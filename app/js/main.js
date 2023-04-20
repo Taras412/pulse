@@ -57,4 +57,26 @@ $(document).ready(function(){
             $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
         })
     })
+
+    // MODAL
+
+    $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    $('.modal__close').on('click', function() {
+        $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
+    });
+    
+    $('.button_mini').each(function(i) {
+        $(this).on('click', function() {
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+            $('.overlay, #order').fadeIn('slow');
+        })
+    });
+
+    /* $('#consultation-form').validate();  ( error jqerry validate )
+    $('#consultation form').validate();
+    $('#order form').validate(); */
+
+    /* $('input[name=phone]').mask("+7 (099) 999-99-99");      ( error tel mask )                         */     
 });
