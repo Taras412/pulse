@@ -17,6 +17,10 @@
 // }
 // logging(3, 6);
 
+
+
+
+
 $(document).ready(function(){
     $('.carousel__inner').slick({
         speed: 1200,
@@ -80,3 +84,36 @@ $(document).ready(function(){
 
     /* $('input[name=phone]').mask("+7 (099) 999-99-99");      ( error tel mask )                         */     
 });
+
+
+
+// VALIDATION FORM JS (test)
+
+function validation(form) {
+
+    function createError(input, text) {
+        const parent = input.parentNode;
+        console.log(parent);
+    }
+
+    let result = true;
+
+    const allInputs = form.querySelectorAll('input');
+    
+    for (const input of allInputs) {
+        if(input.value == "") {
+            console.log('Error !');
+            result = false
+        }
+    }
+    return result
+}
+
+
+document.getElementById('add-form').addEventListener('submit', function(event) {
+    event.preventDefault()
+    
+    if(validation(this) == true) {
+        alert('form checked successful !')
+    }
+})
