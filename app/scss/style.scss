@@ -225,7 +225,9 @@ header {
     line-height: 30px;
     color: $text-color;
 }
-
+.consultation__form .error {
+    box-shadow: 0 0 15px red;
+}
 
 //CAROUSEL//
 .carousel {

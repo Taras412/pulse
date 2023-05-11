@@ -112,9 +112,9 @@
             <p>Просто заполните форму заявки<br>и мы перезвоним вам в течении 10 минут</p>
             <div class="consultation__wrapper">
                 <form class="consultation__form" id="add-form" action="#">
-                    <input placeholder="Name" type="text" name="user-name" value="">
-                    <input placeholder="Phone" type="tel" name="user-tel" value="">
-                    <input placeholder="e-mail" type="email" name="user-email" value="">
+                    <input class="_req" placeholder="Name" type="text" name="user-name" value="">
+                    <input class="_req" placeholder="Phone" type="tel" name="user-tel" value="">
+                    <input class="_req _email" placeholder="e-mail" type="email" name="user-email" value="">
                     <button class="button consultation__button">заказать кОНСУЛЬТАЦИЮ</button>
                 </form>
             </div>
@@ -470,7 +470,7 @@
             <div class="modal__close">&times;</div>
             <div class="modal__subtitle">Просто заполните форму заявки</div>
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
-            <form class="consultation__form" action="#">
+            <form class="consultation__form" id="form-1" action="#">
                 <input placeholder="Name" type="text" name="user-name" value="">
                 <input placeholder="Phone" type="tel" name="user-tel" value="">
                 <input placeholder="e-mail" type="email" name="user-email" value="">
@@ -498,10 +498,8 @@
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>   <!-- подключение jQuery Validate -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>   <!-- подключение jQuery Mask Plugin -->
     <script src="js/slick.min.js"></script>
-    <script src="js/main.min.js"></script>
     <script src="mailer/smart.php"></script>
+    <script src="js/main.min.js"></script>
 </body>
 </html>
