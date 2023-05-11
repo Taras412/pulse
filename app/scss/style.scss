@@ -196,11 +196,24 @@ header {
     display: flex;
     flex-direction: column;
     gap: 17px;
+    position: relative;
     input {
         height: 54px;
         padding: 0 10px;
         border-radius: 5px;
     }
+    &::after {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 51, 51, 0.9) url("../images/Loading_icon.gif") center / 50px no-repeat;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+}
 }
 .consultation__button {
     width: 100%;
@@ -227,6 +240,10 @@ header {
 }
 .consultation__form .error {
     box-shadow: 0 0 15px red;
+}
+.consultation__form._sending::after {
+    opacity: 1;
+    visibility: visible;
 }
 
 //CAROUSEL//
