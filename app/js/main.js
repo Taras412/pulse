@@ -39,7 +39,7 @@ $(document).ready(function(){
             $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
             $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
         })
-    })
+    });
 
     // MODAL
 
@@ -56,11 +56,54 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn('slow');
         })
     });
-               
-                             
+    // FORMS VALIDATION
+    
+    
+    
+    function valideForms(form) {
+        $(form).validate({
+            rules: {
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            }
+        });
+    };
+
+    valideForms('#consultation-wrapper form');
+    valideForms('#consultation form');
+    valideForms('#order form');
+
+    //Phone Mask
+    $('input[name=phone]').mask("+48 999-999-999");
+
+    //sending form
+    $('form').submit(function(e) {
+        e.preventDefault();
+
+        if (!$(this).valid()) {         //if form is valid - return, anothet - stop.
+            return;
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+
+            
+            $('form').trigger('rerset');
+        });
+        return false;
+    });
 });
 
-//TEST FORMS VALIDATION
+
+/* //TEST FORMS VALIDATION
 "use strict"
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -132,6 +175,6 @@ document.addEventListener('DOMContentLoaded', function() {
     function emailTest (input) {
         return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
     }
-});
+}); */
 
 
