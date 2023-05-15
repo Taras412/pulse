@@ -630,6 +630,18 @@ header {
 }
 
 
+.page-up {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    height: 40px;
+    width: 40px;
+    img {
+        width: 100%;
+    }
+}
+
 
 
 @import "media.scss";
