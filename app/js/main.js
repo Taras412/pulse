@@ -94,9 +94,10 @@ $(document).ready(function(){
             data: $(this).serialize()
         }).done(function() {
             $(this).find("input").val("");
-
+            $('#consultation, #order').fadeOut();
+            $('#thanks').fadeIn();
             
-            $('form').trigger('rerset');
+            $('form').trigger('reset');
         });
         return false;
     });
