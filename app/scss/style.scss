@@ -383,6 +383,7 @@ header {
                 color: $button-color;
             }
         }
+        
         hr {
             color: #e8e8e8;
             margin-top: 19px;
@@ -443,6 +444,10 @@ header {
                 font-weight: 300;
                 margin-bottom: 20px;
                 padding-left: 5px;
+                &:last-child {
+                    color:$button-color;
+                    font-weight: 500;
+                }
                 &:before {
                     content:'';
                     position: absolute;
@@ -457,17 +462,30 @@ header {
         }
         &__back {
             position: absolute;
-            bottom: 0;
+            bottom: -90px;
             left: 25%;
-            transform: translateX(50%);
+            transform: translateX(10%);
             display: block;
             color: $button-color;
             font-size: 14px;
             font-weight: 500;
             text-decoration: underline;
             text-transform: uppercase;
+            cursor: pointer;
             &:hover {
                 color: $button-color;
+                text-decoration: none;
+            }
+            &:before {
+                content:'';
+                display: none;
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                background-color: $button-color;
+                left: -10px;
+                top: 5px;
+
             }
         }
     }
@@ -558,6 +576,10 @@ header {
         }
     }
 }
+iframe {
+    width: 100%;
+}
+
 
 // OVERLAY
 .overlay {
