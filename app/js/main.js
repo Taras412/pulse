@@ -6,8 +6,8 @@ $(document).ready(function(){
         adaptiveHeight: true,
         autoplay: false,
         autoplaySpeed: 2000,
-        prevArrow: '<button type="button" class="slick-prev"><img src="../images/carousel/arrow-prev.png"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="../images/carousel/arrow-next.png"></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="images/carousel/arrow-prev.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="images/carousel/arrow-next.png"></button>',
         responsive: [
             {
                 breakpoint: 768,
